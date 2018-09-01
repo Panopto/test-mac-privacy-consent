@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D83075C521348DAC001F1A09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075C421348DAC001F1A09 /* AppDelegate.m */; };
+		D83075C821348DAC001F1A09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075C721348DAC001F1A09 /* ViewController.m */; };
+		D83075CA21348DAD001F1A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83075C921348DAD001F1A09 /* Assets.xcassets */; };
+		D83075CD21348DAD001F1A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83075CB21348DAD001F1A09 /* Main.storyboard */; };
+		D83075D021348DAD001F1A09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075CF21348DAD001F1A09 /* main.m */; };
+		D83075DB21348DAD001F1A09 /* Privacy_Permissions_CheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075DA21348DAD001F1A09 /* Privacy_Permissions_CheckerTests.m */; };
+		D83075E621348DAD001F1A09 /* Privacy_Permissions_CheckerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075E521348DAD001F1A09 /* Privacy_Permissions_CheckerUITests.m */; };
+		D83075F521348E8F001F1A09 /* AppleScriptExerciser.m in Sources */ = {isa = PBXBuildFile; fileRef = D83075F421348E8F001F1A09 /* AppleScriptExerciser.m */; };
+		D83075FA213492AA001F1A09 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83075F9213492AA001F1A09 /* ScriptingBridge.framework */; };
+		D845738E2139FBB500E66D43 /* PrivacyConsentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D845738B2139FBB500E66D43 /* PrivacyConsentController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83075D721348DAD001F1A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83075B821348DAC001F1A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83075BF21348DAC001F1A09;
+			remoteInfo = "Privacy Permissions Checker";
+		};
+		D83075E221348DAD001F1A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83075B821348DAC001F1A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83075BF21348DAC001F1A09;
+			remoteInfo = "Privacy Permissions Checker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D82E142121375C240087D381 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D83075C021348DAC001F1A09 /* Privacy Permissions Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Privacy Permissions Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83075C321348DAC001F1A09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D83075C421348DAC001F1A09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D83075C621348DAC001F1A09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D83075C721348DAC001F1A09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D83075C921348DAD001F1A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83075CC21348DAD001F1A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83075CE21348DAD001F1A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83075CF21348DAD001F1A09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D83075D121348DAD001F1A09 /* Privacy_Permissions_Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Privacy_Permissions_Checker.entitlements; sourceTree = "<group>"; };
+		D83075D621348DAD001F1A09 /* Privacy Permissions CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Privacy Permissions CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83075DA21348DAD001F1A09 /* Privacy_Permissions_CheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Privacy_Permissions_CheckerTests.m; sourceTree = "<group>"; };
+		D83075DC21348DAD001F1A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83075E121348DAD001F1A09 /* Privacy Permissions CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Privacy Permissions CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83075E521348DAD001F1A09 /* Privacy_Permissions_CheckerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Privacy_Permissions_CheckerUITests.m; sourceTree = "<group>"; };
+		D83075E721348DAD001F1A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83075F321348E8F001F1A09 /* AppleScriptExerciser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleScriptExerciser.h; sourceTree = "<group>"; };
+		D83075F421348E8F001F1A09 /* AppleScriptExerciser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleScriptExerciser.m; sourceTree = "<group>"; };
+		D83075F9213492AA001F1A09 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		D83076012134AFA2001F1A09 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
+		D83076032134AFA9001F1A09 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		D845738B2139FBB500E66D43 /* PrivacyConsentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyConsentController.m; sourceTree = "<group>"; };
+		D845738C2139FBB500E66D43 /* PrivacyConsentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyConsentController.h; sourceTree = "<group>"; };
+		D845738D2139FBB500E66D43 /* PowerPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerPoint.h; sourceTree = "<group>"; };
+		D845738F2139FCAA00E66D43 /* Keynote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keynote.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83075BD21348DAC001F1A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83075FA213492AA001F1A09 /* ScriptingBridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075D321348DAD001F1A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075DE21348DAD001F1A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D83075B721348DAC001F1A09 = {
+			isa = PBXGroup;
+			children = (
+				D83075C221348DAC001F1A09 /* Privacy Permissions Checker */,
+				D83075D921348DAD001F1A09 /* Privacy Permissions CheckerTests */,
+				D83075E421348DAD001F1A09 /* Privacy Permissions CheckerUITests */,
+				D83075C121348DAC001F1A09 /* Products */,
+				D83075F8213492A9001F1A09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D83075C121348DAC001F1A09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83075C021348DAC001F1A09 /* Privacy Permissions Checker.app */,
+				D83075D621348DAD001F1A09 /* Privacy Permissions CheckerTests.xctest */,
+				D83075E121348DAD001F1A09 /* Privacy Permissions CheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83075C221348DAC001F1A09 /* Privacy Permissions Checker */ = {
+			isa = PBXGroup;
+			children = (
+				D83075C321348DAC001F1A09 /* AppDelegate.h */,
+				D83075C421348DAC001F1A09 /* AppDelegate.m */,
+				D83075C621348DAC001F1A09 /* ViewController.h */,
+				D83075C721348DAC001F1A09 /* ViewController.m */,
+				D845738C2139FBB500E66D43 /* PrivacyConsentController.h */,
+				D845738B2139FBB500E66D43 /* PrivacyConsentController.m */,
+				D83075F321348E8F001F1A09 /* AppleScriptExerciser.h */,
+				D83075F421348E8F001F1A09 /* AppleScriptExerciser.m */,
+				D845738F2139FCAA00E66D43 /* Keynote.h */,
+				D845738D2139FBB500E66D43 /* PowerPoint.h */,
+				D83075C921348DAD001F1A09 /* Assets.xcassets */,
+				D83075CB21348DAD001F1A09 /* Main.storyboard */,
+				D83075CE21348DAD001F1A09 /* Info.plist */,
+				D83075CF21348DAD001F1A09 /* main.m */,
+				D83075D121348DAD001F1A09 /* Privacy_Permissions_Checker.entitlements */,
+			);
+			path = "Privacy Permissions Checker";
+			sourceTree = "<group>";
+		};
+		D83075D921348DAD001F1A09 /* Privacy Permissions CheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D83075DA21348DAD001F1A09 /* Privacy_Permissions_CheckerTests.m */,
+				D83075DC21348DAD001F1A09 /* Info.plist */,
+			);
+			path = "Privacy Permissions CheckerTests";
+			sourceTree = "<group>";
+		};
+		D83075E421348DAD001F1A09 /* Privacy Permissions CheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D83075E521348DAD001F1A09 /* Privacy_Permissions_CheckerUITests.m */,
+				D83075E721348DAD001F1A09 /* Info.plist */,
+			);
+			path = "Privacy Permissions CheckerUITests";
+			sourceTree = "<group>";
+		};
+		D83075F8213492A9001F1A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D82E142121375C240087D381 /* CoreServices.framework */,
+				D83076032134AFA9001F1A09 /* AppleScriptObjC.framework */,
+				D83076012134AFA2001F1A09 /* AppleScriptKit.framework */,
+				D83075F9213492AA001F1A09 /* ScriptingBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83075BF21348DAC001F1A09 /* Privacy Permissions Checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83075EA21348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions Checker" */;
+			buildPhases = (
+				D83075BC21348DAC001F1A09 /* Sources */,
+				D83075BD21348DAC001F1A09 /* Frameworks */,
+				D83075BE21348DAC001F1A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Privacy Permissions Checker";
+			productName = "Privacy Permissions Checker";
+			productReference = D83075C021348DAC001F1A09 /* Privacy Permissions Checker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83075D521348DAD001F1A09 /* Privacy Permissions CheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83075ED21348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions CheckerTests" */;
+			buildPhases = (
+				D83075D221348DAD001F1A09 /* Sources */,
+				D83075D321348DAD001F1A09 /* Frameworks */,
+				D83075D421348DAD001F1A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83075D821348DAD001F1A09 /* PBXTargetDependency */,
+			);
+			name = "Privacy Permissions CheckerTests";
+			productName = "Privacy Permissions CheckerTests";
+			productReference = D83075D621348DAD001F1A09 /* Privacy Permissions CheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D83075E021348DAD001F1A09 /* Privacy Permissions CheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83075F021348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions CheckerUITests" */;
+			buildPhases = (
+				D83075DD21348DAD001F1A09 /* Sources */,
+				D83075DE21348DAD001F1A09 /* Frameworks */,
+				D83075DF21348DAD001F1A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83075E321348DAD001F1A09 /* PBXTargetDependency */,
+			);
+			name = "Privacy Permissions CheckerUITests";
+			productName = "Privacy Permissions CheckerUITests";
+			productReference = D83075E121348DAD001F1A09 /* Privacy Permissions CheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83075B821348DAC001F1A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Panopto;
+				TargetAttributes = {
+					D83075BF21348DAC001F1A09 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					D83075D521348DAD001F1A09 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D83075BF21348DAC001F1A09;
+					};
+					D83075E021348DAD001F1A09 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D83075BF21348DAC001F1A09;
+					};
+				};
+			};
+			buildConfigurationList = D83075BB21348DAC001F1A09 /* Build configuration list for PBXProject "Privacy Permissions Checker" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D83075B721348DAC001F1A09;
+			productRefGroup = D83075C121348DAC001F1A09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83075BF21348DAC001F1A09 /* Privacy Permissions Checker */,
+				D83075D521348DAD001F1A09 /* Privacy Permissions CheckerTests */,
+				D83075E021348DAD001F1A09 /* Privacy Permissions CheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83075BE21348DAC001F1A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83075CA21348DAD001F1A09 /* Assets.xcassets in Resources */,
+				D83075CD21348DAD001F1A09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075D421348DAD001F1A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075DF21348DAD001F1A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83075BC21348DAC001F1A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83075C821348DAC001F1A09 /* ViewController.m in Sources */,
+				D845738E2139FBB500E66D43 /* PrivacyConsentController.m in Sources */,
+				D83075D021348DAD001F1A09 /* main.m in Sources */,
+				D83075F521348E8F001F1A09 /* AppleScriptExerciser.m in Sources */,
+				D83075C521348DAC001F1A09 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075D221348DAD001F1A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83075DB21348DAD001F1A09 /* Privacy_Permissions_CheckerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83075DD21348DAD001F1A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83075E621348DAD001F1A09 /* Privacy_Permissions_CheckerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83075D821348DAD001F1A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83075BF21348DAC001F1A09 /* Privacy Permissions Checker */;
+			targetProxy = D83075D721348DAD001F1A09 /* PBXContainerItemProxy */;
+		};
+		D83075E321348DAD001F1A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83075BF21348DAC001F1A09 /* Privacy Permissions Checker */;
+			targetProxy = D83075E221348DAD001F1A09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D83075CB21348DAD001F1A09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83075CC21348DAD001F1A09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83075E821348DAD001F1A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D83075E921348DAD001F1A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D83075EB21348DAD001F1A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G7FR783UED;
+				INFOPLIST_FILE = "Privacy Permissions Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D83075EC21348DAD001F1A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G7FR783UED;
+				INFOPLIST_FILE = "Privacy Permissions Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D83075EE21348DAD001F1A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Privacy Permissions CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Privacy Permissions Checker.app/Contents/MacOS/Privacy Permissions Checker";
+			};
+			name = Debug;
+		};
+		D83075EF21348DAD001F1A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TW8SJXYFP5;
+				INFOPLIST_FILE = "Privacy Permissions CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Privacy Permissions Checker.app/Contents/MacOS/Privacy Permissions Checker";
+			};
+			name = Release;
+		};
+		D83075F121348DAD001F1A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G7FR783UED;
+				INFOPLIST_FILE = "Privacy Permissions CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Privacy Permissions Checker";
+			};
+			name = Debug;
+		};
+		D83075F221348DAD001F1A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G7FR783UED;
+				INFOPLIST_FILE = "Privacy Permissions CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.panopto.Privacy-Permissions-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Privacy Permissions Checker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83075BB21348DAC001F1A09 /* Build configuration list for PBXProject "Privacy Permissions Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83075E821348DAD001F1A09 /* Debug */,
+				D83075E921348DAD001F1A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83075EA21348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83075EB21348DAD001F1A09 /* Debug */,
+				D83075EC21348DAD001F1A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83075ED21348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions CheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83075EE21348DAD001F1A09 /* Debug */,
+				D83075EF21348DAD001F1A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83075F021348DAD001F1A09 /* Build configuration list for PBXNativeTarget "Privacy Permissions CheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83075F121348DAD001F1A09 /* Debug */,
+				D83075F221348DAD001F1A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D83075B821348DAC001F1A09 /* Project object */;
+}
