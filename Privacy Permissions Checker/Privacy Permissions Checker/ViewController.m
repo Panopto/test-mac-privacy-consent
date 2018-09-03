@@ -58,7 +58,14 @@
 - (IBAction)requestMediaConsent:(id)sender
 {
     [[PrivacyConsentController sharedController] requestMediaConsentNagIfDenied:YES completion:^(BOOL granted) {
+        // For demonstration purposes, we only log the result. But you can use this block to load another view controller/perform a segue, with different behavior depending on whether you have consent or not
         NSLog(@"granted: %d", granted);
+        if (granted) {
+            NSLog(@"proceed to the protected content that requires camera/microphone access");
+        }
+        else {
+            NSLog(@"present alternate UI/content because the user denied consent for camera/microphone access");
+        }
     }];
 }
 
